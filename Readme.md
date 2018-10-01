@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Артур Ахмадуллин](https://up.htmlacademy.ru/adaptive/15/user/163818).
-* Наставник: `Неизвестно`.
+* Наставник: [Артур Ахмадуллин](https://up.htmlacademy.ru/adaptive/15/user/163818).
 
 ---
 
