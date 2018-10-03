@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Форма</title>
+</head>
+<body>
+  <div class="wrapper">
+    <nav class="nav">
+      <div class="nav__front">
+        <img src="#" alt="Логотип" class="nav__logo">
+        <p><span>Cat</span> energy</p>
+        <button>&times;</button> <!-- &#9776; -->
+      </div>
+      <ul class="nav__items">
+        <li class="nav__item"><a href="index.html">Главная</a></li>
+        <li class="nav__item"><a href="catalog">Каталог продукции</a></li>
+        <li class="nav__item"><a>Подбор программы</a></li>
+      </ul>
+    </nav>
+    <section class="form">
+      <form action="/echo" method="get"></form>
+        <h1>Подбор программы</h1>
+        <p>Заполните анкету и мы подберем программу питания для вашего кота</p>
+        <div class="form__info">
+          <label for="name">Имя:*
+            <input type="text" name="name" id="name" placeholder="Барсик" required>
+          </label>
+          <label for="weight">Вес (кг):*
+            <input type="text" name="weight" id="weight" placeholder="7" required>
+          </label>
+          <label for="age">Возраст: (лет):
+            <input type="text" name="age" id="age" placeholder="7">
+          </label>
+        </div>
+        <div class="form__radio">
+          <label for="slim">
+            <input type="radio" name="radio" id="slim" checked>
+            Похудение
+          </label>
+          <label for="mass">
+            <input type="radio" name="radio" id="mass">
+            Набор массы
+          </label>
+          <label for="unknown">
+            <input type="text" name="radio" id="unknown">
+            Не знаю (нужен ваш совет)
+          </label>
+        </div>
+        <h2>Контактные данные (владельца кота)</h2>
+        <div class="form__contacts">
+          <label for="email">E-mail:*
+            <input type="email" name="email" id="email" placeholder="kuklachev@gmail.com" required>
+          </label>
+          <label for="tel">
+            <input type="tel" name="tel" id="tel" placeholder="8 (960) 900-60-90" required>
+          </label>
+        </div>
+        <h2>Комментарий</h2>
+        <label for="comment">
+          <textarea name="comment" id="comment" cols="30" rows="10">Расскажите обо всех повадках кота</textarea>
+        </label>
+        <h2>Дополнительно</h2>
+        <div class="form__more">
+          <label for="sweetener">
+            <input type="checkbox" name="sweetener" id="sweetener" checked>Сахарозаменитель
+          </label>
+          <label for="water">
+            <input type="checkbox" name="water" id="water">Питьевая вода
+          </label>
+          <label for="milk">
+            <input type="checkbox" name="milk" id="milk">Молоко
+          </label>
+          <label for="vitamins">
+            <input type="checkbox" name="vitamins" id="vitamins">Витамины
+          </label>
+        </div>
+        <div class="form__submit">
+          <label for="submit">
+            <input type="submit" name="submit" id="submit" placeholder="Отправить заявку">
+          </label>
+          <p>* - Обязательные поля</p>
+        </div>
+      </form>
+    </section>
+    <section class="about">
+      <div class="about__info">
+        <h3>Приглашаем к сотрудничеству дилеров!</h3>
+        <p>ул. Большая Конюшенная, д.19/8<br>Санкт-Петербург</p>
+      </div>
+      <div class="about__map">
+        <img src="#" alt="Карта">
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="logo">
+        <img src="#" alt="Логотип">
+      </div>
+      <div class="footer__social">
+        <img src="#" alt="ВКонтакте" class="footer__vk"><a href="#"></a></img>
+        <img src="#" alt="Инстаграм" class="footer__inst"><a href="#"></a></img>
+        <img src="#" alt="Фейсбук" class="footer__fb"><a href="#"></a></img>
+      </div>
+      <div class="footer__academy">
+        <p>HTMl Academy</p>
+        <img src="#" alt="Логотип Академии">
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
