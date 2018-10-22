@@ -28,3 +28,42 @@
   background-image: url("../img/bg-map-mobile@1x.png");
   margin-top: 26px;
 }
+
+@media (min-width: 768px) {
+  .about {
+    margin-top: 64px;
+    min-height: 497px;
+  }
+
+  .about__info {
+    justify-content: space-between;
+    padding: 0 72px 32px;
+
+    & h3 {
+      font-size: 20px;
+      line-height: 25px;
+      width: 170px;
+    }
+
+    & p {
+      text-align: right;
+      width: 180px;
+      font-size: 16px;
+    }
+
+    & span {
+      display: block;
+      margin-top: 19px;
+    }
+  }
+
+  .about__map {
+    width: 768px;
+    height: 396px;
+    background-image: url('../img/bg-map-tablet@1x.png');
+  }
+}
+
+@media (min-width: 1440px) {
+
+}

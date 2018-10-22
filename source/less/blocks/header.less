@@ -42,3 +42,92 @@
     margin-top: 30px;
   }
 }
+
+@media (min-width: 768px) {
+  .header {
+    background-image: none;
+    width: 450px;
+    margin-left: 117px;
+    margin-top: 28px;
+    min-height: 815px;
+
+    & h1 {
+      text-align: left;
+      font-size: 60px;
+      line-height: 60px;
+      color: black;
+    }
+
+    & p {
+      color: black;
+      font-size: 20px;
+      line-height: 20px;
+      text-align: left;
+      margin-top: 15px;
+      position: relative;
+    }
+
+    & p::after {
+      content: url("../img/index-can-tablet@1x.jpg");
+      position: absolute;
+      left: -89px;
+      top: 65px;
+      z-index: -1;
+    }
+
+    & a {
+      width: 245px;
+      height: 52px;
+      line-height: 52px;
+      font-size: 20px;
+      margin: 0;
+      margin-top: 44px;
+      margin-left: 2px;
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .header {
+    min-height: 607px;
+
+    & h1 {
+      width: 500px;
+      padding-left: 73px;
+      padding-top: 76px;
+    }
+
+    & p {
+      padding-left: 73px;
+      margin-top: 17px;
+      position: static;
+    }
+
+    & p::after {
+      content: url("../img/index-can-desktop@1x.png");
+      left: 705px;
+      top: 141px;
+    }
+
+    & a {
+      width: 241px;
+      margin-left: 73px;
+      margin-top: 53px;
+      padding-right: 4px;
+    }
+  }
+
+  .header::after {
+    content: "";
+    position: absolute;
+    width: 680px;
+    height: 696px;
+    display: block;
+    background-image: url("../img/index-background-desktop@1x.jpg");
+    background-position: 100%;
+    background-repeat: no-repeat;
+    right: 147px;
+    top: 0;
+    z-index: -2;
+  }
+}

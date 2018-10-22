@@ -65,3 +65,67 @@
 .how__item:last-of-type::after {
   background-image: url("../img/advantage-clock@1x.png");
 }
+
+@media (min-width: 768px) {
+  .how {
+    padding: 0 30px;
+  }
+
+  .how__items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 56px;
+  }
+
+  .how__item {
+    margin: 0;
+    width: 324px;
+    padding-bottom: 133px;
+
+    & p {
+      margin-top: 32px;
+      font-size: 16px;
+      line-height: 24px;
+      max-width: 250px;
+    }
+
+    & p::before {
+      content: "1";
+      position: absolute;
+      font-size: 311.07px;
+      color: #f2f2f2;
+      z-index: -1;
+      left: 100px;
+      top: 106px;
+    }
+  }
+
+  .how__item:nth-child(2) p::before {
+    content: "2";
+  }
+
+  .how__item:nth-child(3) p::before {
+    content: "3";
+  }
+
+  .how__item:last-child p::before {
+    content: "4";
+  }
+
+  .how__item::before {
+    position: static;
+    width: 80px;
+    height: 80px;
+  }
+
+  .how__item::after {
+    left: 15px;
+    top: 15px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .how__items {
+  }
+}
