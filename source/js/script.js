@@ -23,17 +23,17 @@ navBtn.addEventListener("click", function() {
 // Before-After Slider
 
 var catsBtn = document.getElementById("example__btn");
-var catsImg = document.getElementById("image");
+var catsImg = document.querySelector(".example__images");
 var catsRadio = document.querySelector(".example__button");
 
 catsBtn.addEventListener("click", function() {
-  if (catsImg.getAttribute("src") === "img/before-mobile@1x.png") {
-    catsImg.removeAttribute("src");
-    catsImg.setAttribute("src", "img/after-mobile@1x.png");
+  if (catsImg.classList.contains("example__images")) {
+    catsImg.classList.remove("example__images");
+    catsImg.classList.add("example__images--after");
     catsRadio.style = "left: 45px";
   } else {
-    catsImg.removeAttribute("src");
-    catsImg.setAttribute("src", "img/before-mobile@1x.png");
+    catsImg.classList.remove("example__images--after");
+    catsImg.classList.add("example__images");
     catsRadio.style = "left: 5px";
   }
 });
